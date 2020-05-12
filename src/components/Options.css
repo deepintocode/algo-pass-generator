@@ -1,0 +1,83 @@
+.Options {
+  flex: 1;
+  list-style-type: none;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+
+input[type="text"] {
+  text-align: center;
+  border: none;
+  border-radius: 5px;
+  outline: none;
+  padding: 0.3rem;
+  font-size: 0.9rem;
+  background-color: #f7ece1;
+  color: #13262f;
+}
+
+input[type="text"]::selection {
+  color: #f7ece1;
+  background-color: #13262f;
+}
+
+#service-name {
+  align-self: center;
+}
+
+#punctuationInput {
+  margin-left: 1rem;
+  width: 20px;
+}
+
+.Options-item {
+  font-size: 0.9rem;
+  margin: 0.2rem 0;
+}
+
+.Options-text {
+  display: flex;
+  flex-direction: column;
+}
+
+.Options-text label {
+  margin-bottom: 0.5rem;
+}
+
+.Options-checkbox {
+  display: flex;
+  justify-content: center;
+}
+
+.Options-checkbox-label {
+  cursor: pointer;
+  padding: 0.5rem;
+  border: 2px solid transparent;
+  transition: 0.2s;
+}
+
+.Options-checkbox-label:hover {
+  cursor: pointer;
+  border-radius: 5px;
+  transition: 0.2s;
+  border: 2px solid #f7ece1;
+}
+
+.active {
+  border-radius: 5px;
+  background-color: #f7ece1;
+  color: #242038;
+  transition: 0.2s;
+}
+
+.Options-item {
+  font-size: 0.9rem;
+  margin: 0.2rem 0;
+}
+
+@media screen and (max-width: 768px) {
+  .Options-item {
+    margin: 0.4rem 0;
+  }
+}

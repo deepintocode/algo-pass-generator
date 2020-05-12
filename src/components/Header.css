@@ -1,0 +1,54 @@
+.Header {
+  position: absolute;
+  top: 0;
+  right: 0;
+  height: 20px;
+  text-align: center;
+  margin: 10px;
+  z-index: 1;
+}
+
+.Header-list {
+  list-style-type: none;
+}
+
+.Header-list-item {
+  display: inline;
+  cursor: pointer;
+  color: #13262f;
+  border-bottom: 2px solid transparent;
+  transition: 0.3s;
+}
+
+.Header-list-item:first-child {
+  margin-right: 20px;
+}
+
+.Header-list-item:hover {
+  border-bottom: 2px solid #13262f;
+  transition: 0.3s;
+}
+
+@media screen and (max-width: 768px) {
+  .Header {
+    margin: 0;
+    width: 100%;
+  }
+
+  .Header-list {
+    display: flex;
+    height: 40px;
+    align-items: center;
+    justify-content: space-around;
+  }
+
+  .Header-list-item {
+    margin-right: 5px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .Header {
+    position: fixed;
+  }
+}

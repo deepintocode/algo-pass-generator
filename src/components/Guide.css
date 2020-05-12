@@ -1,0 +1,25 @@
+.Guide {
+  width: 70vw;
+  text-align: justify;
+  margin: 60px auto;
+}
+
+.break {
+  margin-bottom: 1rem;
+}
+
+.double-break {
+  margin-bottom: 2rem;
+}
+
+@media screen and (max-width: 768px) {
+  .Guide {
+    width: 85vw;
+  }
+}
+
+@media screen and (max-width: 320px) {
+  .Guide {
+    width: 95vw;
+  }
+}

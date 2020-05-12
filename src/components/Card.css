@@ -1,0 +1,26 @@
+.Card {
+  background-color: #13262f;
+  color: #f7ece1;
+  padding: 2rem 2rem;
+  overflow-y: hidden;
+  position: relative;
+  z-index: 2;
+}
+
+@media screen and (max-width: 768px) {
+  .Card {
+    padding: 1rem 3rem;
+  }
+}
+
+@media screen and (max-width: 580px) {
+  .Card {
+    height: calc(100vh - 40px);
+  }
+}
+
+@media screen and (max-width: 320px) {
+  .Card {
+    padding: 0.5rem 2rem;
+  }
+}
